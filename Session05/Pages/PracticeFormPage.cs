@@ -1,8 +1,8 @@
-﻿using ETA25_Intermediate.Session04.Enums;
+﻿using ETA25_Intermediate.Session05.Enums;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 
-namespace ETA25_Intermediate.Session04.Pages;
+namespace ETA25_Intermediate.Session05.Pages;
 public class PracticeFormPage
 {
     private readonly IWebDriver _driver;
