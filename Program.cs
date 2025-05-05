@@ -23,7 +23,35 @@ namespace ETA25_Intermediate
             Person person4 = new Person("Test", "Boundary", 5);
             Console.WriteLine($"The person's first name is {person4.FirstName}, last name is {person4.LastName} and age is {person4.Age}");
 
-            person4.Age = -1;
+            //person4.Age = -1;
+            #endregion
+
+            #region Session06
+            Session06.Employee employee1 = new Session06.Employee("Radu", "Software Dev");
+            Console.WriteLine();
+            Console.WriteLine();
+
+            employee1.DisplayInfo();
+            Console.WriteLine(employee1.WhoAmI());
+
+            Console.WriteLine("The current salary is: " + employee1.GetSalary());
+            employee1.SetSalary(5000);
+            Console.WriteLine("The current salary is: " + employee1.GetSalary());
+            employee1.SetSalary(10000);
+
+
+            Session06.Person person5 = new Session06.Employee("DerivedClass", "Department");
+            person5.DisplayInfo();
+
+            List<Session06.Person> personsList = new List<Session06.Person>()
+            {
+                new Session06.Employee("Emp1", "Dept1"),
+                new Session06.Employee("Emp2", "Dept1"),
+                new Session06.Employee("Emp3", "Dept1")
+            };
+
+            personsList.ForEach(person => person.DisplayInfo());
+
             #endregion
 
             Console.ReadKey();
