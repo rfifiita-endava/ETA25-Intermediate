@@ -54,10 +54,10 @@ public class BasePage
     public Dictionary<AlertsFramesWindowsMenuOption, string> AlertsFramesWindowsMenuOptionsText = new Dictionary<AlertsFramesWindowsMenuOption, string>()
     {
         { AlertsFramesWindowsMenuOption.BrowserWindows, "Browser Windows" },
-        { AlertsFramesWindowsMenuOption.Alerts, "Alerts" },
-        { AlertsFramesWindowsMenuOption.Frames, "Frames" },
-        { AlertsFramesWindowsMenuOption.NestedFrames, "Nested Frames" },
-        { AlertsFramesWindowsMenuOption.ModalDialogs, "Modal Dialogs" }
+        { AlertsFramesWindowsMenuOption.Alerts,         "Alerts" },
+        { AlertsFramesWindowsMenuOption.Frames,         "Frames" },
+        { AlertsFramesWindowsMenuOption.NestedFrames,   "Nested Frames" },
+        { AlertsFramesWindowsMenuOption.ModalDialogs,   "Modal Dialogs" }
     };
 
     #endregion
