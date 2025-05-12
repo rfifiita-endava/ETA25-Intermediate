@@ -1,17 +1,11 @@
-﻿using ETA25_Intermediate.Session05.HelperMethods;
-using ETA25_Intermediate.Session05.Pages;
+﻿using ETA25_Intermediate.Session07.HelperMethods;
+using ETA25_Intermediate.Session07.Pages;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.UI;
-using SeleniumExtras.WaitHelpers;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace ETA25_Intermediate.Session05;
+namespace ETA25_Intermediate.Session07;
 public class AlertsFramesWindowsTests
 {
     public IWebDriver Driver { get; private set; }

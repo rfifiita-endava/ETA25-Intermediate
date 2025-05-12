@@ -1,6 +1,6 @@
 ﻿using OpenQA.Selenium;
 
-namespace ETA25_Intermediate.Session05.HelperMethods;
+namespace ETA25_Intermediate.Session07.HelperMethods;
 
 public class JavascriptHelper
 {
