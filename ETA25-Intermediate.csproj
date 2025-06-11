@@ -10,8 +10,23 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Session11\Data\UserData.json" />
+    <None Remove="Session11\Data\UserData.xlsx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Session11\Data\UserData.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Session11\Data\UserData.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="DotNetSeleniumExtras.WaitHelpers" Version="3.11.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.13.0" />
+    <PackageReference Include="NPOI" Version="2.7.3" />
     <PackageReference Include="NUnit" Version="4.3.2" />
     <PackageReference Include="NUnit.ConsoleRunner" Version="3.19.2" />
     <PackageReference Include="NUnit3TestAdapter" Version="5.0.0" />

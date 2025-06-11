@@ -1,0 +1,24 @@
+[
+  {
+    "FirstName": "Radu",
+    "LastName": "Fifiita",
+    "Email": "test@test.com",
+    "Gender": "Male",
+    "Mobile": "00010305",
+    "DateOfBirth": "1992-04-16",
+    "Subjects": [ "English", "Accounting", "Physics" ],
+    "Hobbies": [ "Music", "Reading" ],
+    "Address": "Test Address 123, &*()"
+  },
+  {
+    "FirstName": "John",
+    "LastName": "Doe",
+    "Email": "john.doe@test.com",
+    "Gender": "Male",
+    "Mobile": "0987654321",
+    "DateOfBirth": "2001-01-11",
+    "Subjects": [ "Arts", "Accounting" ],
+    "Hobbies": [ "Sports" ],
+    "Address": "Test Address 888, &*()"
+  }
+]

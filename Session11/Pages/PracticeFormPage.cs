@@ -53,7 +53,16 @@ public class PracticeFormPage : BasePage
         var monthDropdown = new SelectElement(monthDropdownWe);
 
         // Selectam luna
-        monthDropdown.SelectByText(currentMonthName);
+        var isMonthANumber = int.TryParse(currentMonthName, out int monthNumber);
+
+        if (isMonthANumber)
+        {
+            monthDropdown.SelectByValue((monthNumber - 1).ToString());
+        }
+        else
+        {
+            monthDropdown.SelectByText(currentMonthName);
+        }
 
         // Selectam ziua
         IWebElement dayOfCurrentMonth = Driver.FindElement(By.XPath($"//div[text()=\"{currentMonthDay}\" and not(contains(@class, \"--outside-month\"))]"));
@@ -63,12 +72,12 @@ public class PracticeFormPage : BasePage
     public void SelectSubjects(List<string> subjects)
     {
         var subjectInput = Driver.FindElement(By.Id("subjectsInput"));
-        foreach(var subject in subjects)
+        foreach (var subject in subjects)
         {
             subjectInput.SendKeys(subject);
             subjectInput.SendKeys(Keys.Enter);
         }
-       
+
     }
 
     public void SelectHobbies(List<Hobby> hobbies)
